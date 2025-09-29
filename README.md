@@ -15,29 +15,6 @@ El objetivo es mostrar un flujo de login, dashboard protegido, perfil editable y
 
 ---
 
-## Estructura del proyecto
-
-/app
-  /login        → Página de inicio de sesión
-  /dashboard    → Página protegida (requiere login)
-  /me           → Página de perfil con edición de nombre
-  /test         → Página de pruebas con logs detallados
-  layout.tsx    → Layout global + Provider de MSW
-  page.tsx      → Página inicial (Next.js por defecto)
-
-/components
-  LogoutButton.tsx
-  MswProvider.tsx
-
-/mocks
-  browser.ts    → Inicializa MSW en cliente
-  handlers.ts   → Define endpoints mockeados (login, refresh, perfil)
-
-middleware.ts   → Middleware para proteger rutas privadas
-globals.css     → Estilos globales (Tailwind + variables CSS)
-
----
-
 ##  Instalación y ejecución
 
 1. Clonar el repositorio:
